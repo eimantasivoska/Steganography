@@ -15,7 +15,7 @@ namespace Watermark
         /// <param name="watermark">Watermark to hide</param>
         /// <param name="shift">Number (1-7) by how many bits to shift. Default - 4</param>
         /// <returns>Watermarked original image</returns>
-        public static Bitmap Merge(Bitmap original, Bitmap watermark, int shift = 4)
+        public static Bitmap Watermark(Bitmap original, Bitmap watermark, int shift = 4)
         {
             if (original.Size != watermark.Size)
                 throw new ArgumentException("Watermark must be the same size as the original image!");
